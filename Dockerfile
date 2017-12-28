@@ -53,6 +53,7 @@ RUN conda install -y python=${python_version} && \
     #pip install https://cntk.ai/PythonWheel/GPU/cntk-2.1-cp35-cp35m-linux_x86_64.whl && \
     conda install Pillow scikit-learn notebook pandas matplotlib mkl nose pyyaml six h5py && \
     conda install theano pygpu bcolz && \
-    pip install pyodbc
+    pip install pyodbc && \
+    pip install kaitaistruct
 
 WORKDIR /src
